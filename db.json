@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Gregory Taylor",
+      "image": "sdasd",
+      "price": "0.02",
+      "id": 8
+    },
+    {
+      "name": "Gregory Taylor",
+      "image": "sdasd",
+      "price": "0.02",
+      "id": 9
     }
   ]
 }

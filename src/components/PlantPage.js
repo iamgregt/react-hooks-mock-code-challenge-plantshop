@@ -1,14 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
-function PlantPage() {
+function PlantPage({plants, onNewPlant}) {
+  const [searchTerm, onSearchTerm] = useState("")
+
+  function handleSearch(e){
+    onSearchTerm(e.target.value)
+  }
+
+
   return (
     <main>
-      <NewPlantForm />
-      <Search />
-      <PlantList />
+      <NewPlantForm onNewPlant={onNewPlant} />
+      <Search onSearch={handleSearch} />
+      <PlantList plants={plants} searchTerm={searchTerm} />
     </main>
   );
 }
